@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://f12buplrr300"]
+
+[ext_resource type="Script" uid="uid://cfp5l6biwu2ja" path="res://scripts/taral.gd" id="1_v5iaq"]
+[ext_resource type="Texture2D" uid="uid://dc38gxfp7gcdd" path="res://sprites/taralalero.png" id="2_po4rd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_inbs7"]
+atlas = ExtResource("2_po4rd")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f40hg"]
+atlas = ExtResource("2_po4rd")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4m6ut"]
+atlas = ExtResource("2_po4rd")
+region = Rect2(0, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gx357"]
+atlas = ExtResource("2_po4rd")
+region = Rect2(512, 512, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbhwa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inbs7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f40hg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4m6ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gx357")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 3.0
+}]
+
+[node name="shark" type="RigidBody2D"]
+scale = Vector2(0.6, 0.6)
+gravity_scale = 0.0
+script = ExtResource("1_v5iaq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_kbhwa")
+animation = &"falling"
+frame_progress = 0.23418

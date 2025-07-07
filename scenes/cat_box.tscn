@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://d8j4k3f1dh0x"]
+
+[ext_resource type="Texture2D" uid="uid://dobxuc08vuejc" path="res://sprites/catBox.png" id="1_oh8w5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxtiy"]
+atlas = ExtResource("1_oh8w5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixo1d"]
+atlas = ExtResource("1_oh8w5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwx64"]
+atlas = ExtResource("1_oh8w5")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwenx"]
+atlas = ExtResource("1_oh8w5")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u105i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxtiy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixo1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwx64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwenx")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="CatBox" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_u105i")
+animation = &"idle"
+frame_progress = 0.821269

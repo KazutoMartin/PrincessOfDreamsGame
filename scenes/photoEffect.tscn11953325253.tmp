@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3dd6rintmuq6"]
+
+[ext_resource type="Script" uid="uid://bgg43whvjdlvj" path="res://scripts/vignette_shader.gdshader" id="1_x322c"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_x322c")
+
+[node name="shutterSound" type="AudioStreamPlayer2D" parent="."]
