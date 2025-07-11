@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://uyhuyf04cm0e"
+path="res://.godot/imported/Yann-Tiersen-La-valse-d Amélie-320.mp3-418831b39b544a4cc288e4f564248e91.mp3str"
+
+[deps]
+
+source_file="res://music/Yann-Tiersen-La-valse-d Amélie-320.mp3"
+dest_files=["res://.godot/imported/Yann-Tiersen-La-valse-d Amélie-320.mp3-418831b39b544a4cc288e4f564248e91.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
