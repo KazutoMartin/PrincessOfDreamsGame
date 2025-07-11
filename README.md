@@ -23,7 +23,7 @@ It’s a personal and heartfelt experience wrapped in pixel art, inspired by rea
 
 ## 📦 How to Play
 
-1. Download the latest release from the [Releases](https://github.com/yourusername/princess-of-dreams/releases) page.
+1. Download the latest release from the [Releases](https://github.com/KazutoMartin/PrincessOfDreamsGame/releases) page.
 2. Extract the zip file for your platform.
 3. Run the game executable (`PrincessOfDreams.exe` or `.app`).
 
