@@ -40,9 +40,4 @@ It’s a personal and heartfelt experience wrapped in pixel art, inspired by rea
 
 This game was created as a **birthday gift**, and is meant to be a small but meaningful experience.
 
----
-
-## 📬 Contact
-
-For feedback or thoughts: `kazutomartin20@gmail.com`
 
